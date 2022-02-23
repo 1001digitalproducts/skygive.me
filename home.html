@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="SkyGive" />
+    <meta name="mobile-wep-app-capable" content="yes">
+    <!-- Mendeklarasikan warna yang muncul pada address bar Chrome versi seluler -->
+    <meta name="theme-color" content="11325B" />
+    <!-- Mendeklarasikan ikon untuk iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="GadgetIndo" />
+    <link rel="apple-touch-icon" href="./assets/image/icon/mobile-alt-regular-72.png" />
+    <link rel="apple-touch-icon" href="./assets/image/icon/mobile-alt-regular-96.png" />
+    <link rel="apple-touch-icon" href="./assets/image/icon/mobile-alt-regular-132.png" />
+    <link rel="apple-touch-icon" href="./assets/image/icon/mobile-alt-regular-144.png" />
+    <link rel="apple-touch-icon" href="./assets/image/icon/mobile-alt-regular-156.png" />
+    <link rel="apple-touch-icon" href="./assets/image/icon/mobile-alt-regular-192.png" />
+    <link rel="apple-touch-icon" href="./assets/image/icon/mobile-alt-regular-240.png" />
+    <!-- Mendeklarasikan ikon untuk Windows -->
+    <meta name="msapplication-TileImage" content="./assets/image/icon/mobile-alt-regular-72.png" />
+    <meta name="msapplication-TileImage" content="./assets/image/icon/mobile-alt-regular-96.png" />
+    <meta name="msapplication-TileImage" content="./assets/image/icon/mobile-alt-regular-132.png" />
+    <meta name="msapplication-TileImage" content="./assets/image/icon/mobile-alt-regular-144.png" />
+    <meta name="msapplication-TileImage" content="./assets/image/icon/mobile-alt-regular-156.png" />
+    <meta name="msapplication-TileImage" content="./assets/image/icon/mobile-alt-regular-192.png" />
+    <meta name="msapplication-TileImage" content="./assets/image/icon/mobile-alt-regular-240.png" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <title>SkyGive - Home</title>
+    <link rel="icon" type="png" href="./assets/image/icon/mobile-alt-regular-72.png">
+    <link rel="manifest" href="./manifest.json">
+
+    <script>
+        var base_url = "./"
+    </script>
+    
+    <link href="./assets/css/output.css" type="text/css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" type="text/css" rel="stylesheet" />
+    <!-- <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+    <link rel="preload" href="./assets/css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/darkmode.js" async></script>
+    <style>
+        .btn-dropdown ~ .list-dropdown {
+            --transform-translate-x: 0;
+            --transform-translate-y: 0;
+            --transform-rotate: 0;
+            --transform-skew-x: 0;
+            --transform-skew-y: 0;
+            --transform-scale-x: 1;
+            --transform-scale-y: 1;
+            transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+            transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+            transition-duration: 75ms;
+            opacity: 0;
+            --transform-scale-x: 0;
+            --transform-scale-y: 0;
+        }
+
+        .btn-dropdown ~ .list-dropdown:focus-within, .btn-dropdown:focus ~ .list-dropdown {
+            transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            transition-duration: 100ms;
+            opacity: 1;
+            --transform-scale-x: 1;
+            --transform-scale-y: 1;
+        }
+    </style>
+</head>
+<body class="dark:bg-gray-800 text-gray-700 dark:text-gray-300 w-full tracking-tighter text-xs">
+    <!-- <header class="w-full backdrop-filter backdrop-blur-lg fixed z-50 my-auto py-2 hidden md:block"> -->
+    <header class="w-full fixed z-50 my-auto py-2 hidden md:block">
+       <div class="flex font-bold bg-white dark:bg-gray-800 w-5/6 mx-auto px-12 md:py-4 py-2 rounded-full shadow-xl">
+          <div class="block text-base text-primary dark:text-white mx-auto md:mx-0">
+             <a href="./" class="relative">SkyGive</a>
+          </div>
+          <div class="hidden md:flex w-full mt-8 md:mt-0 text-xs items-center justify-end gap-8">
+             <a class="border-b border-gray dark:border-gray-700 transition duration-500 dark:hover:text-white dark:hover:border-primary hover:text-primary hover:border-primary" href="#introduction">Intro</a>
+             <a class="border-b border-gray dark:border-gray-700 transition duration-500 dark:hover:text-white dark:hover:border-primary hover:text-primary hover:border-primary" href="#get-items">How to</a>
+             <!-- <a class="border-b border-gray dark:border-gray-700 transition duration-500 dark:hover:text-white dark:hover:border-primary hover:text-primary hover:border-primary" href="#partnership">Partnership</a> -->
+             <a class="border-b border-gray dark:border-gray-700 transition duration-500 dark:hover:text-white dark:hover:border-primary hover:text-primary hover:border-primary" href="#projects">Projects</a>
+             <a class="border-b border-gray dark:border-gray-700 transition duration-500 dark:hover:text-white dark:hover:border-primary hover:text-primary hover:border-primary" href="#activity">Activity</a>
+             <a class="border-b border-gray dark:border-gray-700 transition duration-500 dark:hover:text-white dark:hover:border-primary hover:text-primary hover:border-primary" href="#roadmap">Roadmap</a>
+             <a class="border-b border-gray dark:border-gray-700 transition duration-500 dark:hover:text-white dark:hover:border-primary hover:text-primary hover:border-primary" href="#financial">Financial</a>
+             <a class="border-b border-gray dark:border-gray-700 transition duration-500 dark:hover:text-white dark:hover:border-primary hover:text-primary hover:border-primary" href="#team">Team</a>
+          </div>
+       </div>
+    </header>
+    <main class="relative">
+       <div class="h-screen w-full bg-cover bg-fixed absolute block dark:hidden" style="background-image: url(./assets/image/bg-default.jpg)"></div>
+       <div class="h-screen w-full bg-cover bg-fixed absolute hidden dark:block" style="background-image: url(./assets/image/bg-dark-default.jpg)"></div>
+       <div class="text-white w-full">
+          <div class="relative landing overflow-hidden h-screen px-16 md:px-0 w-full md:w-5/6 mx-auto z-20">  
+             <div class="w-full h-full flex items-center justify-center">
+                <div class="text-center w-full" data-aos="fade-up">
+                   <div class="title uppercase font-bold text-2xl md:text-4xl p-4 md:pl-0">Skygive</div>
+                   <div class="desc text-sm">Build Together, for a better future !</div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div id="introduction" class="bg-white dark:bg-gray-800 w-full">
+        <div class="relative landing overflow-hidden h-screen px-8 w-full md:w-5/6 mx-auto">
+           <div class="w-full h-full flex items-center justify-center">
+                <div class="w-full text-xs md:text-base md:flex items-center gap-8" data-aos="fade-up">
+                    <div class="w-full md:w-1/2">
+                        <div class="font-bold text-2xl md:text-4xl" data-aos="fade-up">
+                            <span class="border-b border-white dark:border-gray-900">Introduction</span>
+                        </div>
+                        <div class="mt-4">
+                            Egglife Cards is an egg nft where color and shape dominate. Enter the metaverse  through virtual life eggs. 60% of sales from NFT for operations and 40% Fundrising for social assistance
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 text-center">
+                        <img class="w-full" src="./assets/image/intro.png" alt="Introduction">
+                    </div>
+                </div>
+           </div>
+        </div>
+       </div>
+       <div id="get-items" class="bg-gray-100 dark:bg-gray-800 w-full">
+        <div class="relative landing overflow-hidden h-screen px-8 w-full md:w-5/6 mx-auto">
+           <div class="w-full h-full flex items-center justify-center">
+                <div class="w-full text-xs md:text-base md:flex items-center gap-8" data-aos="fade-up">
+                    <div class="w-full md:w-1/2 text-center">
+                        <img class="w-full" src="./assets/image/how-to-get-items.png" alt="Introduction">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="font-bold text-2xl md:text-4xl" data-aos="fade-up">
+                            <span class="border-b border-white dark:border-gray-900">How To Get Items</span>
+                        </div>
+                        <div class="mt-4">
+                            Egglife Cards is an egg nft where color and shape dominate. Enter the metaverse  through virtual life eggs. 60% of sales from NFT for operations and 40% Fundrising for social assistance
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+       </div>
+
+       <!-- <div id="introduction" class="w-full h-screen my-auto md:py-2 bg-gray-100 dark:bg-gray-800">
+        <div class="relative landing overflow-hidden px-8 md:px-32 py-20 w-full mx-auto">
+           <div class="font-bold text-4xl" data-aos="fade-up">
+               <span class="border-b border-white dark:border-gray-900">Introduction</span>
+           </div>
+           <div class="mt-8 md:flex text-base" data-aos="fade-up">
+               <div class="w-full md:w-1/2">
+                    Egglife Cards is an egg nft where color and shape dominate. Enter the metaverse  through virtual life eggs. 60% of sales from NFT for operations and 40% Fundrising for social assistance
+               </div>
+               <div class="w-full md:w-1/2">
+                   Ini Gambar
+               </div>
+           </div>
+        </div>
+       </div> -->
+       <!-- <div id="partnership" class="w-full md:py-2 bg-gray-100 dark:bg-gray-800 text-gray-800">
+        <div class="relative landing overflow-hidden px-8 py-20  w-full md:w-5/6 mx-auto bg-primary shadow-xl md:rounded-xl">
+            <div class="my-2">
+                <div class="font-bold text-2xl" data-aos="fade-up">
+                    <span class="border-b border-gray-800">Partnership</span>
+                </div>
+                <div class="overflow-auto mt-8 flex items-center gap-x-10 p-2" data-aos="fade-up">
+                    <img src="https://laravel.com/images/companies/twitch.png" alt="twitch" style="height: 32px">
+                    <img src="https://laravel.com/images/companies/disney.png" alt="Disney" style="height: 39px">
+                    <img src="https://laravel.com/images/companies/st-jude.png" alt="St. Jude" style="height: 61px">
+                    <img src="https://laravel.com/images/companies/wwe.png" alt="WWE" style="height: 42px">
+                    <img src="https://laravel.com/images/companies/bankrate.png" alt="Bankrate" style="height: 24px">
+                    <img src="https://laravel.com/images/companies/warner-bros.png" alt="Warner Bros" style="height: 37px">
+                    <img src="https://laravel.com/images/companies/about-you.png" alt="About You" style="height: 28px">
+                </div>
+            </div>
+        </div>
+       </div> -->
+       <div id="projects" class="w-full md:py-2 bg-gray-100 dark:bg-gray-800">
+        <div class="relative landing overflow-hidden px-8 py-20 w-full md:w-5/6 mx-auto bg-white dark:bg-gray-700 shadow-xl md:rounded-xl">
+           <div class="font-bold text-2xl" data-aos="fade-up">
+               <span class="border-b border-white dark:border-gray-900">Projects</span>
+           </div>
+           <div class="mt-8" data-aos="fade-up">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="max-w-sm rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-600" data-aos="fade-up">
+                    <div class="m-4 bg-white p-4 rounded">
+                        <img class="w-full" src="./assets/image/projects/project1.png" alt="Egglife Card">
+                    </div>
+                    <div class="p-4">
+                      <div class="font-bold underline mb-2">Egglife Card</div>
+                      <p class="my-4 text-gray-700 dark:text-gray-300">
+                        Egglife Cards is an egg nft where color and shape dominate. Enter the metaverse through virtual life eggs. 60% of sales from NFT for operations and 40% Fundrising for social assistance
+                      </p>
+                      <div class="text-xs text-right italic">- 1 Januari 2022 -</div>
+                    </div>
+                </div>
+                <!-- <div class="max-w-sm rounded overflow-hidden bg-gray-100 dark:bg-gray-600" data-aos="fade-up">
+                    <img class="w-full" src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                    <div class="p-4">
+                      <div class="font-bold underline mb-2">Projects 2</div>
+                      <p class="my-4 text-gray-700 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      </p>
+                      <div class="text-xs text-right italic">- 22 Januari 2021 -</div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden bg-gray-100 dark:bg-gray-600" data-aos="fade-up">
+                    <img class="w-full" src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                    <div class="p-4">
+                      <div class="font-bold underline mb-2">Projects 3</div>
+                      <p class="my-4 text-gray-700 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      </p>
+                      <div class="text-xs text-right italic">- 22 Januari 2021 -</div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden bg-gray-100 dark:bg-gray-600" data-aos="fade-up">
+                    <img class="w-full" src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                    <div class="p-4">
+                      <div class="font-bold underline mb-2">Projects 4</div>
+                      <p class="my-4 text-gray-700 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      </p>
+                      <div class="text-xs text-right italic">- 22 Januari 2021 -</div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden bg-gray-100 dark:bg-gray-600" data-aos="fade-up">
+                    <img class="w-full" src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                    <div class="p-4">
+                      <div class="font-bold underline mb-2">Projects 4</div>
+                      <p class="my-4 text-gray-700 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      </p>
+                      <div class="text-xs text-right italic">- 22 Januari 2021 -</div>
+                    </div>
+                </div> -->
+             </div>
+           </div>
+        </div>
+       </div>
+       <div id="activity" class="w-full md:py-2 bg-gray-100 dark:bg-gray-800 text-white">
+        <div class="relative landing overflow-hidden px-8 py-20  w-full md:w-5/6 mx-auto bg-primary shadow-xl md:rounded-xl">
+            <div class="my-2">
+                <div class="font-bold text-2xl" data-aos="fade-up">
+                    <span class="border-b-2 border-white">Activity</span>
+                </div>
+                <div class="mt-8 justify-center text-center font-bold " data-aos="fade-up">
+                    - we have no recent activity yet -
+                </div>
+            </div>
+        </div>
+       </div>
+       <div id="roadmap" class="w-full md:py-2 bg-gray-100 dark:bg-gray-800">
+        <div class="relative landing overflow-hidden px-8 py-20 w-full md:w-5/6 mx-auto bg-white dark:bg-gray-700 shadow-xl md:rounded-xl">
+           <div class="font-bold text-2xl" data-aos="fade-up">
+               <span class="border-b border-white dark:border-gray-900">Roadmap</span>
+           </div>
+           <div class="mt-8" data-aos="fade-up">
+            <!-- This example requires Tailwind CSS v2.0+ -->
+            <nav aria-label="Progress">
+                <ol role="list" class="overflow-hidden">
+                <li class="relative pb-10" data-aos="fade-up">
+                    <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-primary" aria-hidden="true"></div>
+                    <!-- Complete Step -->
+                    <a href="javascript:;" class="relative flex items-start group">
+                    <span class="h-9 flex items-center">
+                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-primary rounded-full">
+                        <!-- Heroicon name: solid/check -->
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        </span>
+                    </span>
+                    <span class="ml-4 min-w-0 flex flex-col">
+                        <span class="text-xs font-semibold tracking-wide uppercase">Create account</span>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Vitae sed mi luctus laoreet.</span>
+                    </span>
+                    </a>
+                </li>
+            
+                <li class="relative pb-10" data-aos="fade-up">
+                    <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
+                    <!-- Current Step -->
+                    <a href="javascript:;" class="relative flex items-start group" aria-current="step">
+                    <span class="h-9 flex items-center" aria-hidden="true">
+                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-white dark:bg-gray-700 border-2 border-primary rounded-full">
+                        <span class="h-2.5 w-2.5 bg-primary rounded-full"></span>
+                        </span>
+                    </span>
+                    <span class="ml-4 min-w-0 flex flex-col">
+                        <span class="text-xs font-semibold tracking-wide uppercase text-primary">Profile information</span>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Cursus semper viverra facilisis et et some more.</span>
+                    </span>
+                    </a>
+                </li>
+            
+                <li class="relative pb-10" data-aos="fade-up">
+                    <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
+                    <!-- Upcoming Step -->
+                    <a href="javascript:;" class="relative flex items-start group">
+                    <span class="h-9 flex items-center" aria-hidden="true">
+                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-white dark:bg-gray-700 border-2 border-gray-300 rounded-full group-hover:border-gray-400">
+                        <span class="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300"></span>
+                        </span>
+                    </span>
+                    <span class="ml-4 min-w-0 flex flex-col">
+                        <span class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">Business information</span>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Penatibus eu quis ante.</span>
+                    </span>
+                    </a>
+                </li>
+            
+                <li class="relative pb-10" data-aos="fade-up">
+                    <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
+                    <!-- Upcoming Step -->
+                    <a href="javascript:;" class="relative flex items-start group">
+                    <span class="h-9 flex items-center" aria-hidden="true">
+                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-white dark:bg-gray-700 border-2 border-gray-300 rounded-full group-hover:border-gray-400">
+                        <span class="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300"></span>
+                        </span>
+                    </span>
+                    <span class="ml-4 min-w-0 flex flex-col">
+                        <span class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">Theme</span>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Faucibus nec enim leo et.</span>
+                    </span>
+                    </a>
+                </li>
+            
+                <li class="relative" data-aos="fade-up">
+                    <!-- Upcoming Step -->
+                    <a href="javascript:;" class="relative flex items-start group">
+                    <span class="h-9 flex items-center" aria-hidden="true">
+                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-white dark:bg-gray-700 border-2 border-gray-300 rounded-full group-hover:border-gray-400">
+                        <span class="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300"></span>
+                        </span>
+                    </span>
+                    <span class="ml-4 min-w-0 flex flex-col">
+                        <span class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">Preview</span>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Iusto et officia maiores porro ad non quas.</span>
+                    </span>
+                    </a>
+                </li>
+                </ol>
+            </nav>
+           </div>
+        </div>
+       </div>
+       <div id="financial" class="w-full md:py-2 bg-gray-100 dark:bg-gray-800 text-white">
+        <div class="relative landing overflow-hidden px-8 py-20  w-full md:w-5/6 mx-auto bg-primary shadow-xl md:rounded-xl">
+            <div class="my-2">
+                <div class="font-bold text-2xl" data-aos="fade-up">
+                    <span class="border-b-2 border-white">Financial Statements</span>
+                </div>
+                <div class="mt-8" data-aos="fade-up">
+                    <div class="overflow-hidden mx-auto w-full md:w-1/3 div-chart" id="summary">
+                        <canvas id="chartDoughnut"></canvas>
+                        <div class="text-center mt-4">
+                            <a href="javascript:;" onclick="show_financial('detail')" class="cursor underline">View Details</a>
+                        </div>
+                    </div>
+                    <div class="mx-auto w-full md:w-3/4 div-chart" id="detail" style="display: none;">
+                        <div class="flex">
+                            <a href="javascript:;" onclick="data_detail('all')" class="cursor p-4 px-6">All</a>
+                            <a href="javascript:;" onclick="data_detail('operasional')" class="cursor p-4 px-6">Operasional</a>
+                            <a href="javascript:;" onclick="data_detail('fundraising')" class="cursor p-4 px-6">Fundraising</a>
+                        </div>
+                        <div class="overflow-auto p-2">
+                            <table class="table-auto w-full" id="list">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-2">Date</th>
+                                        <th class="px-4 py-2">Description</th>
+                                        <th class="px-4 py-2">Debit</th>
+                                        <th class="px-4 py-2">Credit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="border border-black px-4 py-2">22/02/2022</td>
+                                        <td class="border border-black px-4 py-2">Desc 1</td>
+                                        <td class="border border-black px-4 py-2 text-right">1.000</td>
+                                        <td class="border border-black px-4 py-2 text-right">1.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-black px-4 py-2">22/02/2022</td>
+                                        <td class="border border-black px-4 py-2">Desc 2</td>
+                                        <td class="border border-black px-4 py-2 text-right">2.000</td>
+                                        <td class="border border-black px-4 py-2 text-right">2.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="javascript:;" onclick="show_financial('summary')" class="cursor underline">View Summary</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div id="team" class="w-full md:py-2 bg-gray-100 dark:bg-gray-800">
+        <div class="relative landing overflow-hidden px-8 py-20  w-full md:w-5/6 mx-auto bg-white dark:bg-gray-700 shadow-xl md:rounded-xl">
+            <div class="my-2">
+                <div class="font-bold text-2xl" data-aos="fade-up">
+                    <span class="border-b border-white dark:border-gray-900">Our Team</span>
+                </div>
+                <div>
+                    <div class="mx-auto pt-12 px-4 max-w-7xl" data-aos="fade-up">
+                        <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+                        <div class="space-y-5 sm:space-y-4">
+                            <p>Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.</p>
+                        </div>
+                        <div class="lg:col-span-2">
+                            <ul role="list" class="space-y-12 sm:divide-y sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
+                                <li class="sm:py-8">
+                                    <div class="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                                    <div class="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                                        <img class="object-cover shadow-lg rounded-lg" src="./assets/image/cyclo.jpg" alt="">
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <div class="space-y-4">
+                                            <div class="leading-6 font-medium space-y-1">
+                                                <h3 class="underline font-bold">Cyclo</h3>
+                                                <p class="text-primary">Planner</p>
+                                            </div>
+                                            <div>
+                                                <p>Hello, you can call me Cyclo. Im from Tasikmalaya city. Have a nice day :D</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="sm:py-8">
+                                    <div class="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                                    <div class="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                                        <img class="object-cover shadow-lg rounded-lg" src="./assets/image/trylo.jpg" alt="">
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <div class="space-y-4">
+                                            <div class="leading-6 font-medium space-y-1">
+                                                <h3 class="underline font-bold">Trylo</h3>
+                                                <p class="text-primary">Executor</p>
+                                            </div>
+                                            <div>
+                                                <p>Hello, you can call me Trylo. Im from Tasikmalaya city. Have a nice day :D</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <!-- More people... -->
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="bg-gray-100 dark:bg-gray-800 w-full">
+        <div class="relative landing overflow-hidden h-screen px-16 md:px-0 w-full md:w-5/6 mx-auto">
+           <div class="w-full h-full flex items-center justify-center">
+              <div class="text-center w-full" data-aos="fade-up">
+                 <div class="title uppercase font-bold text-2xl md:text-4xl p-4"><span class="border-b dark:border-white border-gray-700">Skygive</span></div>
+                 <div class="desc text-sm">A new <b>Hope</b> is born!</div>
+              </div>
+           </div>
+        </div>
+       </div>
+    </main>
+    <footer class="bg-gray-800 border-t border-primary py-16 w-full text-white">
+        <div class="px-16 md:px-0 w-full md:w-5/6 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-x-16 items-center">
+                <div class="col-span-3 grid grid-cols-1 md:grid-cols-3">© 2021 - 2022 SkyGive</div>
+                <div class="col-span-3 grid grid-cols-1 md:grid-cols-3">
+                    <div>
+                        <div class="font-bold py-4"><span class="border-b border-white dark:text-primary dark:border-primary">Helping for</span></div>
+                        <div>Lorem</div>
+                        <div>Lorem</div>
+                        <div>Lorem</div>
+                        <div>Lorem</div>
+                    </div>
+                    <div>
+                        <div class="font-bold py-4"><span class="border-b border-white dark:text-primary dark:border-primary">Learn</span></div>
+                        <div>Lorem</div>
+                        <div>Lorem</div>
+                        <div>Lorem</div>
+                        <div>Lorem</div>
+                    </div>
+                    <div>
+                        <div class="font-bold py-4"><span class="border-b border-white dark:text-primary dark:border-primary">Contact Us</span></div>
+                        <div>Lorem</div>
+                        <div>Lorem</div>
+                        <div>Lorem</div>
+                        <div>Lorem</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="hidden md:block fixed top-5 right-10 inline-block w-5 md:w-10 select-none z-50">
+       <button type="button" onclick="dark()" class="appearance-none cursor-pointer rounded-full p-2 bg-gray-100 text-gray-700 dark:text-gray-300 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="block dark:hidden h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+          <svg class="hidden dark:block h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+       </button>
+    </div>
+    <div class="hidden md:block fixed bottom-10 right-10 inline-block w-5 md:w-10 select-none z-50">
+       <button type="button" onclick="topFunc()" class="appearance-none cursor-pointer rounded-full p-2 bg-gray-100 text-gray-700 dark:text-gray-300 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+          </svg>
+       </button>
+    </div>
+
+    <div class="block md:hidden fixed bottom-14 right-14 inline-block w-5 md:w-10 select-none z-50">
+        <div class="relative">
+            <button type="button" class="btn-dropdown appearance-none cursor-pointer rounded-full p-2 bg-gray-100 text-gray-700 dark:text-gray-300 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 shadow-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div class="list-dropdown origin-bottom-right absolute bottom-0 right-0 mt-2 w-48 rounded-md shadow-lg divide-y divide-gray-100 bg-white dark:bg-gray-700 shadow-xs">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+                    <a href="#introduction" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        Intro
+                    </a>
+                    <a href="#get-items" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        How to
+                    </a>
+                    <!-- <a href="#partnership" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        Partnership
+                    </a> -->
+                    <a href="#projects" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        Projects
+                    </a>
+                    <a href="#activity" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        Activity
+                    </a>
+                    <a href="#roadmap" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        Roadmap
+                    </a>
+                    <a href="#financial" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        Financial
+                    </a>
+                    <a href="#team" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        Team
+                    </a>
+                </div>
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+                    <a href="#" onclick="topFunc()" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg class="mr-3 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                        </svg>
+                        To Top
+                    </a>
+                    <a href="javascript:;" onclick="dark()" class="block flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800" role="menuitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="block dark:hidden mr-3 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                        
+                        <svg class="hidden dark:block mr-3 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <span class="block dark:hidden">Dark</span>
+                        <span class="hidden dark:block">Light</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    AOS.init({
+        once: true,
+    })
+
+    let data = [6000, 4000]
+    let labels = ["Javascript", "Python"]
+    const dataDoughnut = {
+        labels: labels,
+        datasets: [
+            {
+                label: "My First Dataset",
+                data: data,
+                borderColor: "transparent",
+                backgroundColor: [
+                    "rgb(254, 202, 202)",
+                    "rgb(239, 68, 68)"
+                ],
+                hoverOffset: 4,
+            },
+        ],
+    };
+
+    const configDoughnut = {
+        type: "doughnut",
+        data: dataDoughnut,
+        options: {
+            plugins: {
+                legend: {
+                    labels: {
+                        color: "white"
+                    }
+                },
+            },
+            onClick: (e, data) => {
+                if (data.length == 0) return
+
+                let type = data[0].index == 0 ? 'operasional' : 'fundraising'
+                data_detail(type)
+                show_financial('detail')
+            }
+        },
+    };
+
+    var chartBar = new Chart(
+        document.getElementById("chartDoughnut"),
+        configDoughnut
+    );
+
+    function show_financial(e){
+        $('.div-chart').hide()
+        $('#' + e).show()
+    }
+
+    function data_detail(type){
+        switch(type){
+            case 'operasional':
+                data = [6000]
+                labels = ["Javascript"]
+            break
+
+            case 'fundraising':
+                data = [4000]
+                labels = ["Python"]
+            break
+
+            default:
+                data = [6000, 4000]
+                labels = ["Javascript", "Python"]
+            break
+        }
+
+        let strBody = ""
+        for (let i = 0; i < data.length; i++){
+            strBody += '<tr>'
+            strBody += '<td class="border border-black px-4 py-2">22/02/2022</td>'
+            strBody += '<td class="border border-black px-4 py-2">Desc ' + (i+1) + '</td>'
+            strBody += '<td class="border border-black px-4 py-2 text-right">' + data[i] + '</td>'
+            strBody += '<td class="border border-black px-4 py-2 text-right">' + data[i] + '</td>'
+            strBody += '</tr>'
+        }
+        $('#financial #detail #list tbody').empty().html(strBody)
+    }
+</script>
+</html>
