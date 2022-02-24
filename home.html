@@ -66,6 +66,32 @@
             --transform-scale-x: 1;
             --transform-scale-y: 1;
         }
+
+        ._sFaKdKh1Cg {
+            list-style: none;
+        }
+
+        ._sFaKdKh1Cg li::before {
+            list-style-position: inside;
+            content: "\00D7";
+            font-size: 25px;
+            color: #0ea5e9;
+            display: inline-block; 
+            width: 1em;
+        }
+
+        ._sFaKdKh1Cg ._FFGcnPor9u::before {
+            font-weight: bold;
+            content: "\2713";
+            font-size: 20px;
+            text-shadow: 2px 2px 15px #0ea5e9;
+            margin: auto;
+        }
+
+        ._yuyVWA4quU {
+            background: #0ea5e9;
+            box-shadow: 0 0 0 5px #0ea5e933, 0 0 0 10px #0ea5e922, 0 0 0 15px #0ea5e911;
+        }
     </style>
 </head>
 <body class="dark:bg-gray-800 text-gray-700 dark:text-gray-300 w-full tracking-tighter text-xs">
@@ -255,93 +281,60 @@
            <div class="font-bold text-2xl" data-aos="fade-up">
                <span class="border-b border-white dark:border-gray-900">Roadmap</span>
            </div>
-           <div class="mt-8" data-aos="fade-up">
-            <!-- This example requires Tailwind CSS v2.0+ -->
-            <nav aria-label="Progress">
-                <ol role="list" class="overflow-hidden">
-                <li class="relative pb-10" data-aos="fade-up">
-                    <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-primary" aria-hidden="true"></div>
-                    <!-- Complete Step -->
-                    <a href="javascript:;" class="relative flex items-start group">
-                    <span class="h-9 flex items-center">
-                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-primary rounded-full">
-                        <!-- Heroicon name: solid/check -->
-                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                        </span>
-                    </span>
-                    <span class="ml-4 min-w-0 flex flex-col">
-                        <span class="text-xs font-semibold tracking-wide uppercase">Create account</span>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Vitae sed mi luctus laoreet.</span>
-                    </span>
-                    </a>
-                </li>
-            
-                <li class="relative pb-10" data-aos="fade-up">
-                    <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
-                    <!-- Current Step -->
-                    <a href="javascript:;" class="relative flex items-start group" aria-current="step">
-                    <span class="h-9 flex items-center" aria-hidden="true">
-                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-white dark:bg-gray-700 border-2 border-primary rounded-full">
-                        <span class="h-2.5 w-2.5 bg-primary rounded-full"></span>
-                        </span>
-                    </span>
-                    <span class="ml-4 min-w-0 flex flex-col">
-                        <span class="text-xs font-semibold tracking-wide uppercase text-primary">Profile information</span>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Cursus semper viverra facilisis et et some more.</span>
-                    </span>
-                    </a>
-                </li>
-            
-                <li class="relative pb-10" data-aos="fade-up">
-                    <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
-                    <!-- Upcoming Step -->
-                    <a href="javascript:;" class="relative flex items-start group">
-                    <span class="h-9 flex items-center" aria-hidden="true">
-                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-white dark:bg-gray-700 border-2 border-gray-300 rounded-full group-hover:border-gray-400">
-                        <span class="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300"></span>
-                        </span>
-                    </span>
-                    <span class="ml-4 min-w-0 flex flex-col">
-                        <span class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">Business information</span>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Penatibus eu quis ante.</span>
-                    </span>
-                    </a>
-                </li>
-            
-                <li class="relative pb-10" data-aos="fade-up">
-                    <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
-                    <!-- Upcoming Step -->
-                    <a href="javascript:;" class="relative flex items-start group">
-                    <span class="h-9 flex items-center" aria-hidden="true">
-                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-white dark:bg-gray-700 border-2 border-gray-300 rounded-full group-hover:border-gray-400">
-                        <span class="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300"></span>
-                        </span>
-                    </span>
-                    <span class="ml-4 min-w-0 flex flex-col">
-                        <span class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">Theme</span>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Faucibus nec enim leo et.</span>
-                    </span>
-                    </a>
-                </li>
-            
-                <li class="relative" data-aos="fade-up">
-                    <!-- Upcoming Step -->
-                    <a href="javascript:;" class="relative flex items-start group">
-                    <span class="h-9 flex items-center" aria-hidden="true">
-                        <span class="relative z-10 w-8 h-8 flex items-center justify-center bg-white dark:bg-gray-700 border-2 border-gray-300 rounded-full group-hover:border-gray-400">
-                        <span class="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300"></span>
-                        </span>
-                    </span>
-                    <span class="ml-4 min-w-0 flex flex-col">
-                        <span class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">Preview</span>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Iusto et officia maiores porro ad non quas.</span>
-                    </span>
-                    </a>
-                </li>
-                </ol>
-            </nav>
+           <div class="mt-8 relative md:py-8" data-aos="fade-up">
+            <div class="border-2-2 absolute border-opacity-20 border-primary h-full md:w-full md:h-0 border"></div>
+            <div class="grid grid-cols-1 md:grid-cols-5 px-4">
+                <div class="relative">
+                   <div class="absolute mt-8 -ml-8 md:block md:-mt-4 md:ml-0 z-20 border border-primary shadow-xl w-8 h-8 rounded-full _yuyVWA4quU"></div>
+                   <div class="mt-4 py-4 px-4 md:px-0">
+                      <h3 class="mb-3 font-bold text-base">Q1 2022</h3>
+                      <ul class="_sFaKdKh1Cg">
+                         <!-- <li class="_FFGcnPor9u">Phone List & Detail</li> -->
+                         <li>Launching Egglife Card NFT's</li>
+                         <li>Minting the first 3000 card</li>
+                      </ul>
+                   </div>
+                </div>
+                <div class="relative">
+                   <div class="absolute mt-8 -ml-8 md:block md:-mt-4 md:ml-0 z-20 border border-primary shadow-xl w-8 h-8 rounded-full bg-white dark:bg-gray-700"></div>
+                   <div class="mt-4 py-4 px-4 md:px-0">
+                      <h3 class="mb-3 font-bold text-base">Q2 2022</h3>
+                      <ul class="_sFaKdKh1Cg">
+                         <!-- <li class="_FFGcnPor9u">All Phone</li>
+                         <li class="_FFGcnPor9u">Search, Filter & Share Phone</li> -->
+                         <li>Launching Gibot NFT's</li>
+                         <li>Minting 2500 card</li>
+                      </ul>
+                   </div>
+                </div>
+                <div class="relative">
+                   <div class="absolute mt-8 -ml-8 md:block md:-mt-4 md:ml-0 z-20 border border-primary shadow-xl w-8 h-8 rounded-full bg-white dark:bg-gray-700"></div>
+                   <div class="mt-4 py-4 px-4 md:px-0">
+                      <h3 class="mb-3 font-bold text-base">Q3 2022</h3>
+                      <ul class="_sFaKdKh1Cg">
+                         <li>Minting 2000 card</li>
+                      </ul>
+                   </div>
+                </div>
+                <div class="relative">
+                   <div class="absolute mt-8 -ml-8 md:block md:-mt-4 md:ml-0 z-20 border border-primary shadow-xl w-8 h-8 rounded-full bg-white dark:bg-gray-700"></div>
+                   <div class="mt-4 py-4 px-4 md:px-0">
+                      <h3 class="mb-3 font-bold text-base">Q4 2022</h3>
+                      <ul class="_sFaKdKh1Cg">
+                         <li>Minting 1500 card</li>
+                      </ul>
+                   </div>
+                </div>
+                <div class="relative">
+                   <div class="absolute mt-8 -ml-8 md:block md:-mt-4 md:ml-0 z-20 border border-primary shadow-xl w-8 h-8 rounded-full bg-white dark:bg-gray-700"></div>
+                   <div class="mt-4 py-4 px-4 md:px-0">
+                      <h3 class="mb-3 font-bold text-base">Q1 2023</h3>
+                      <ul class="_sFaKdKh1Cg">
+                         <li>Start Develop the first Egglife Card Game</li>
+                      </ul>
+                   </div>
+                </div>
+             </div>
            </div>
         </div>
        </div>
